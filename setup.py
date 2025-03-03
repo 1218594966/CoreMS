@@ -4,11 +4,12 @@ import sys
 from setuptools import setup, find_packages
 # The directory containing this file
 
-# The text of the README file
-with open("README.md", "r") as fh:
+# 读取 README.md
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open('requirements.txt') as f:
+# 读取 requirements.txt
+with open("requirements.txt", "r", encoding="utf-8") as f:
     required = f.read().splitlines()
 
 # This call to setup() does all the work
